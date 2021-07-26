@@ -1,0 +1,70 @@
+PUT articles
+
+POST articles/_doc/514
+{
+  "title": "How to create a Sticky Cart button"
+}
+
+POST articles/_doc/513
+{
+  "title": "How to create a Buy It Now button"
+}
+
+POST articles/_doc/512
+{
+  "title": "July 2021"
+}
+
+POST articles/_doc/511
+{
+  "title": "How to add Rivyo Product Reviews on your page"
+}
+
+POST articles/_doc/510
+{
+  "title": "How to add Wiser Product Recommendations on your page"
+}
+
+POST articles/_doc/509
+{
+  "title": "How To Add Klaviyo Form To Your Page"
+}
+
+POST articles/_doc/508
+{
+  "title": "How to create a new page on Page Builder"
+}
+
+POST articles/_doc/507
+{
+  "title": "How to use the revamped Global Style"
+}
+
+POST articles/_doc/506
+{
+  "title": "Check A/B Testing data on Google Analytics"
+}
+
+POST articles/_doc/473
+{
+  "title": "release_notes test"
+}
+
+POST articles/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { 
+          "fuzzy":{"title":  "add"  }          
+        },
+        { 
+          "fuzzy":{"title":  "buton"  }          
+        },
+        { 
+          "fuzzy":{"title":  "product"  }          
+        }
+      ]
+    }
+  }
+}
